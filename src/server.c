@@ -7210,6 +7210,15 @@ redisTestProc *getTestProcByName(const char *name) {
 }
 #endif
 
+/**
+ * @brief 主函数入口
+ *
+ * 此函数是 Redis 服务器的入口点。它处理命令行参数，初始化服务器配置，并启动服务器。
+ *
+ * @param argc 命令行参数数量
+ * @param argv 命令行参数数组
+ * @return 返回值取决于程序的执行结果。成功时返回 0，失败时返回非零值。
+ */
 int main(int argc, char **argv) {
     struct timeval tv;
     int j;
